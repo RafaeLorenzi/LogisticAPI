@@ -1237,3 +1237,87 @@ org.eclipse.core.runtime.CoreException: Could not resolve artifact antlr:antlr:j
 2023-05-18 12:45:35,942 [Worker-196: Launching logistic-api - LogisticApiApplication] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
 2023-05-18 12:45:35,943 [Worker-196: Launching logistic-api - LogisticApiApplication] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered properties files.
 2023-05-18 12:45:35,946 [Worker-196: Launching logistic-api - LogisticApiApplication] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 1 resource
+2023-05-18 12:45:35,960 [Worker-196: Launching logistic-api - LogisticApiApplication] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 1 resource
+2023-05-18 12:45:35,965 [Worker-196: Launching logistic-api - LogisticApiApplication] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2023-05-18 12:45:35,966 [Worker-196: Launching logistic-api - LogisticApiApplication] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered properties files.
+2023-05-18 12:45:35,966 [Worker-196: Launching logistic-api - LogisticApiApplication] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\Rafael\OneDrive\햞ea de Trabalho\workspace\logistic-api\src\test\resources
+2023-05-18 13:52:28,112 [Worker-204: Launching logistic-api - LogisticApiApplication] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2023-05-18 13:52:28,115 [Worker-204: Launching logistic-api - LogisticApiApplication] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered properties files.
+2023-05-18 13:52:28,121 [Worker-204: Launching logistic-api - LogisticApiApplication] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 1 resource
+2023-05-18 13:52:28,217 [Worker-204: Launching logistic-api - LogisticApiApplication] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 1 resource
+2023-05-18 13:52:28,222 [Worker-204: Launching logistic-api - LogisticApiApplication] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2023-05-18 13:52:28,222 [Worker-204: Launching logistic-api - LogisticApiApplication] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered properties files.
+2023-05-18 13:52:28,222 [Worker-204: Launching logistic-api - LogisticApiApplication] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\Rafael\OneDrive\햞ea de Trabalho\workspace\logistic-api\src\test\resources
+2023-05-18 13:55:25,011 [Worker-204: Launching logistic-api - LogisticApiApplication] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2023-05-18 13:55:25,012 [Worker-204: Launching logistic-api - LogisticApiApplication] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered properties files.
+2023-05-18 13:55:25,031 [Worker-204: Launching logistic-api - LogisticApiApplication] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 1 resource
+2023-05-18 13:55:25,075 [Worker-204: Launching logistic-api - LogisticApiApplication] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 1 resource
+2023-05-18 13:55:25,081 [Worker-204: Launching logistic-api - LogisticApiApplication] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2023-05-18 13:55:25,081 [Worker-204: Launching logistic-api - LogisticApiApplication] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered properties files.
+2023-05-18 13:55:25,082 [Worker-204: Launching logistic-api - LogisticApiApplication] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\Rafael\OneDrive\햞ea de Trabalho\workspace\logistic-api\src\test\resources
+2023-05-18 14:00:40,074 [Worker-206: Launching logistic-api - LogisticApiApplication] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2023-05-18 14:00:40,075 [Worker-206: Launching logistic-api - LogisticApiApplication] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered properties files.
+2023-05-18 14:00:40,076 [Worker-206: Launching logistic-api - LogisticApiApplication] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 1 resource
+2023-05-18 14:00:40,086 [Worker-206: Launching logistic-api - LogisticApiApplication] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 1 resource
+2023-05-18 14:00:40,092 [Worker-206: Launching logistic-api - LogisticApiApplication] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2023-05-18 14:00:40,092 [Worker-206: Launching logistic-api - LogisticApiApplication] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered properties files.
+2023-05-18 14:00:40,092 [Worker-206: Launching logistic-api - LogisticApiApplication] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\Rafael\OneDrive\햞ea de Trabalho\workspace\logistic-api\src\test\resources
+2023-05-18 14:05:29,543 [Worker-209: Launching logistic-api - LogisticApiApplication] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2023-05-18 14:05:29,543 [Worker-209: Launching logistic-api - LogisticApiApplication] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered properties files.
+2023-05-18 14:05:29,546 [Worker-209: Launching logistic-api - LogisticApiApplication] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 1 resource
+2023-05-18 14:05:29,562 [Worker-209: Launching logistic-api - LogisticApiApplication] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 1 resource
+2023-05-18 14:05:29,567 [Worker-209: Launching logistic-api - LogisticApiApplication] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2023-05-18 14:05:29,567 [Worker-209: Launching logistic-api - LogisticApiApplication] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered properties files.
+2023-05-18 14:05:29,567 [Worker-209: Launching logistic-api - LogisticApiApplication] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\Rafael\OneDrive\햞ea de Trabalho\workspace\logistic-api\src\test\resources
+2023-05-18 14:10:12,008 [Worker-218: Launching logistic-api - LogisticApiApplication] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2023-05-18 14:10:12,008 [Worker-218: Launching logistic-api - LogisticApiApplication] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered properties files.
+2023-05-18 14:10:12,010 [Worker-218: Launching logistic-api - LogisticApiApplication] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 1 resource
+2023-05-18 14:10:12,033 [Worker-218: Launching logistic-api - LogisticApiApplication] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 1 resource
+2023-05-18 14:10:12,037 [Worker-218: Launching logistic-api - LogisticApiApplication] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2023-05-18 14:10:12,038 [Worker-218: Launching logistic-api - LogisticApiApplication] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered properties files.
+2023-05-18 14:10:12,038 [Worker-218: Launching logistic-api - LogisticApiApplication] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\Rafael\OneDrive\햞ea de Trabalho\workspace\logistic-api\src\test\resources
+2023-05-18 14:12:01,729 [Worker-215: Launching logistic-api - LogisticApiApplication] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2023-05-18 14:12:01,730 [Worker-215: Launching logistic-api - LogisticApiApplication] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered properties files.
+2023-05-18 14:12:01,731 [Worker-215: Launching logistic-api - LogisticApiApplication] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 1 resource
+2023-05-18 14:12:01,747 [Worker-215: Launching logistic-api - LogisticApiApplication] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 1 resource
+2023-05-18 14:12:01,750 [Worker-215: Launching logistic-api - LogisticApiApplication] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2023-05-18 14:12:01,751 [Worker-215: Launching logistic-api - LogisticApiApplication] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered properties files.
+2023-05-18 14:12:01,751 [Worker-215: Launching logistic-api - LogisticApiApplication] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\Rafael\OneDrive\햞ea de Trabalho\workspace\logistic-api\src\test\resources
+2023-05-18 14:12:23,608 [Worker-211: Launching logistic-api - LogisticApiApplication] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2023-05-18 14:12:23,608 [Worker-211: Launching logistic-api - LogisticApiApplication] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered properties files.
+2023-05-18 14:12:23,610 [Worker-211: Launching logistic-api - LogisticApiApplication] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 1 resource
+2023-05-18 14:12:23,621 [Worker-211: Launching logistic-api - LogisticApiApplication] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 1 resource
+2023-05-18 14:12:23,626 [Worker-211: Launching logistic-api - LogisticApiApplication] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2023-05-18 14:12:23,626 [Worker-211: Launching logistic-api - LogisticApiApplication] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered properties files.
+2023-05-18 14:12:23,626 [Worker-211: Launching logistic-api - LogisticApiApplication] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\Rafael\OneDrive\햞ea de Trabalho\workspace\logistic-api\src\test\resources
+2023-05-18 14:23:52,384 [Worker-221: Launching logistic-api - LogisticApiApplication] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2023-05-18 14:23:52,385 [Worker-221: Launching logistic-api - LogisticApiApplication] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered properties files.
+2023-05-18 14:23:52,387 [Worker-221: Launching logistic-api - LogisticApiApplication] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 1 resource
+2023-05-18 14:23:52,404 [Worker-221: Launching logistic-api - LogisticApiApplication] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 1 resource
+2023-05-18 14:23:52,412 [Worker-221: Launching logistic-api - LogisticApiApplication] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2023-05-18 14:23:52,412 [Worker-221: Launching logistic-api - LogisticApiApplication] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered properties files.
+2023-05-18 14:23:52,413 [Worker-221: Launching logistic-api - LogisticApiApplication] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\Rafael\OneDrive\햞ea de Trabalho\workspace\logistic-api\src\test\resources
+2023-05-18 14:26:20,681 [Worker-224: Launching logistic-api - LogisticApiApplication] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2023-05-18 14:26:20,682 [Worker-224: Launching logistic-api - LogisticApiApplication] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered properties files.
+2023-05-18 14:26:20,684 [Worker-224: Launching logistic-api - LogisticApiApplication] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 1 resource
+2023-05-18 14:26:20,697 [Worker-224: Launching logistic-api - LogisticApiApplication] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 1 resource
+2023-05-18 14:26:20,702 [Worker-224: Launching logistic-api - LogisticApiApplication] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2023-05-18 14:26:20,702 [Worker-224: Launching logistic-api - LogisticApiApplication] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered properties files.
+2023-05-18 14:26:20,703 [Worker-224: Launching logistic-api - LogisticApiApplication] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\Rafael\OneDrive\햞ea de Trabalho\workspace\logistic-api\src\test\resources
+2023-05-18 14:37:21,946 [Worker-227: Launching logistic-api - LogisticApiApplication] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2023-05-18 14:37:21,946 [Worker-227: Launching logistic-api - LogisticApiApplication] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered properties files.
+2023-05-18 14:37:21,948 [Worker-227: Launching logistic-api - LogisticApiApplication] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 1 resource
+2023-05-18 14:37:21,992 [Worker-227: Launching logistic-api - LogisticApiApplication] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 1 resource
+2023-05-18 14:37:21,996 [Worker-227: Launching logistic-api - LogisticApiApplication] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2023-05-18 14:37:21,996 [Worker-227: Launching logistic-api - LogisticApiApplication] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered properties files.
+2023-05-18 14:37:21,997 [Worker-227: Launching logistic-api - LogisticApiApplication] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\Rafael\OneDrive\햞ea de Trabalho\workspace\logistic-api\src\test\resources
+2023-05-18 14:59:14,276 [Worker-228: Launching logistic-api - LogisticApiApplication] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2023-05-18 14:59:14,276 [Worker-228: Launching logistic-api - LogisticApiApplication] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered properties files.
+2023-05-18 14:59:14,280 [Worker-228: Launching logistic-api - LogisticApiApplication] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 1 resource
+2023-05-18 14:59:14,298 [Worker-228: Launching logistic-api - LogisticApiApplication] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 1 resource
+2023-05-18 14:59:14,303 [Worker-228: Launching logistic-api - LogisticApiApplication] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2023-05-18 14:59:14,303 [Worker-228: Launching logistic-api - LogisticApiApplication] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered properties files.
+2023-05-18 14:59:14,303 [Worker-228: Launching logistic-api - LogisticApiApplication] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\Rafael\OneDrive\햞ea de Trabalho\workspace\logistic-api\src\test\resources
+2023-05-18 14:59:38,717 [Worker-233: Launching logistic-api - LogisticApiApplication] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2023-05-18 14:59:38,718 [Worker-233: Launching logistic-api - LogisticApiApplication] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered properties files.
+2023-05-18 14:59:38,719 [Worker-233: Launching logistic-api - LogisticApiApplication] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 1 resource
