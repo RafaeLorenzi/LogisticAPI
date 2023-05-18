@@ -1,0 +1,5 @@
+package com.lorenzi.logistic.domain.repository;
+
+public interface ClientRepository {
+
+}

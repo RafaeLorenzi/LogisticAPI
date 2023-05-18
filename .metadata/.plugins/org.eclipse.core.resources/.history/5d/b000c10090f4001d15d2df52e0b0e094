@@ -1,0 +1,5 @@
+package com.lorenzi.logistic.api.controller;
+
+public class ClientController {
+
+}
