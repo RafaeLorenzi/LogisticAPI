@@ -1,0 +1,5 @@
+package com.lorenzi.logistic.domain.exception;
+
+public class DomainExcption {
+
+}

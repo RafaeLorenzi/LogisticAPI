@@ -23,6 +23,7 @@ import org.springframework.web.bind.annotation.RestController;
 
 import com.lorenzi.logistic.domain.model.Client;
 import com.lorenzi.logistic.domain.repository.ClientRepository;
+import com.lorenzi.logistic.domain.service.ClientRegisterService;
 
 
 
@@ -33,6 +34,9 @@ public class ClientController {
 	
 	@Autowired
 	private ClientRepository clientRepository;
+	
+	@Autowired
+	private ClientRegisterService clientService;
 	
 	
 
@@ -55,7 +59,7 @@ public class ClientController {
 	@ResponseStatus(HttpStatus.CREATED)
 	public Client addClient(@Valid @RequestBody Client client) {
 		
-		return clientRepository.save(client);
+		return clientService.save(client);
 		
 	}
 	@PutMapping("/{clientId}")
@@ -65,7 +69,7 @@ public class ClientController {
 			return ResponseEntity.notFound().build();
 	}
 		client.setId(clientId);
-		client = clientRepository.save(client);
+		client = clientService.save(client);
 		
 		return ResponseEntity.ok(client);
 		
@@ -76,7 +80,7 @@ public class ClientController {
 			return ResponseEntity.notFound().build();
 	}
 		
-		clientRepository.deleteById(clientId);
+		clientService.delete(clientId);
 		
 		return ResponseEntity.noContent().build();
 		
