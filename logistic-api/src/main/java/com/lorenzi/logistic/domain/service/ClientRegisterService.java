@@ -14,6 +14,12 @@ public class ClientRegisterService {
 	@Autowired
 	private ClientRepository clientRepository;
 	
+	
+	public Client search(Long clientId) {
+		return  clientRepository.findById(clientId)
+	    		.orElseThrow(() -> new DomainException("Client not found"));
+	}
+	
 	@Transactional
 	public Client save(Client client) {
 		boolean usedEmail = clientRepository.findByEmail(client.getEmail())
