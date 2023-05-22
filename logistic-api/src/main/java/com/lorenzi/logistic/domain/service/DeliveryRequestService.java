@@ -1,11 +1,10 @@
 package com.lorenzi.logistic.domain.service;
 
-import java.time.LocalDateTime;
+import java.time.OffsetDateTime;
 
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 import org.springframework.transaction.annotation.Transactional;
-
 
 import com.lorenzi.logistic.domain.model.Client;
 import com.lorenzi.logistic.domain.model.Delivery;
@@ -27,7 +26,7 @@ public class DeliveryRequestService {
 		
 		delivery.setClient(client);
 		delivery.setStatus(DeliveryStatus.PENDING);
-		delivery.setDeliveryDate(LocalDateTime.now());
+		delivery.setDeliveryDate(OffsetDateTime.now());
 		
 		return deliveryRep.save(delivery);
 		

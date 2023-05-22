@@ -2,6 +2,7 @@ package com.lorenzi.logistic.domain.model;
 
 import java.math.BigDecimal;
 import java.time.LocalDateTime;
+import java.time.OffsetDateTime;
 import java.util.Objects;
 
 import javax.persistence.Embedded;
@@ -12,6 +13,14 @@ import javax.persistence.GeneratedValue;
 import javax.persistence.GenerationType;
 import javax.persistence.Id;
 import javax.persistence.ManyToOne;
+import javax.validation.Valid;
+import javax.validation.constraints.NotNull;
+import javax.validation.groups.ConvertGroup;
+
+import com.fasterxml.jackson.annotation.JsonProperty;
+import com.fasterxml.jackson.annotation.JsonProperty.Access;
+import com.fasterxml.jackson.databind.ser.std.StdKeySerializers.Default;
+import com.lorenzi.logistic.domain.ValidationGroups;
 
 @Entity
 public class Delivery {
@@ -20,20 +29,29 @@ public class Delivery {
 	@GeneratedValue(strategy = GenerationType.IDENTITY)
 	private Long id;
 	
+	@Valid
+	@ConvertGroup(from = Default.class, to = ValidationGroups.ClientId.class)
+	@NotNull
 	@ManyToOne
 	private Client client;
 	
+	@Valid
+	@NotNull
 	@Embedded
 	private Recipient recipient;
 	
+	@NotNull
 	private BigDecimal tax;
 	
+	@JsonProperty(access = Access.READ_ONLY)
 	@Enumerated(EnumType.STRING)
 	private DeliveryStatus status;
 	
-	private LocalDateTime deliveryDate;
+	@JsonProperty(access = Access.READ_ONLY)
+	private OffsetDateTime deliveryDate;
 	
-	private LocalDateTime completedDate;
+	@JsonProperty(access = Access.READ_ONLY)
+	private OffsetDateTime completedDate;
 	
 	
 	
@@ -67,16 +85,16 @@ public class Delivery {
 	public void setStatus(DeliveryStatus status) {
 		this.status = status;
 	}
-	public LocalDateTime getDeliveryDate() {
+	public OffsetDateTime getDeliveryDate() {
 		return deliveryDate;
 	}
-	public void setDeliveryDate(LocalDateTime deliveryDate) {
-		this.deliveryDate = deliveryDate;
+	public void setDeliveryDate(OffsetDateTime offsetDateTime) {
+		this.deliveryDate = offsetDateTime;
 	}
-	public LocalDateTime getCompletedDate() {
+	public OffsetDateTime getCompletedDate() {
 		return completedDate;
 	}
-	public void setCompletedDate(LocalDateTime completedDate) {
+	public void setCompletedDate(OffsetDateTime completedDate) {
 		this.completedDate = completedDate;
 	}
 	@Override
