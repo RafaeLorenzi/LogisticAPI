@@ -1,7 +1,6 @@
 package com.lorenzi.logistic.domain.model;
 
 import java.math.BigDecimal;
-import java.time.LocalDateTime;
 import java.time.OffsetDateTime;
 import java.util.Objects;
 

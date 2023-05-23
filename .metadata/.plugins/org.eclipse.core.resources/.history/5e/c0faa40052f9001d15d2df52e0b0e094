@@ -1,0 +1,5 @@
+package com.lorenzi.logistic.common;
+
+public class ModelMapperConfig {
+
+}
