@@ -1,0 +1,5 @@
+package com.lorenzi.logistic.api.model.input;
+
+public class RecipientInput {
+
+}

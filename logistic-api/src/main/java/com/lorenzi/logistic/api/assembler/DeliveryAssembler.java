@@ -8,6 +8,7 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Component;
 
 import com.lorenzi.logistic.api.model.DeliveryModel;
+import com.lorenzi.logistic.api.model.input.DeliveryInput;
 import com.lorenzi.logistic.domain.model.Delivery;
 
 @Component
@@ -27,4 +28,7 @@ public class DeliveryAssembler {
 				.collect(Collectors.toList());
 	}
 
+	public Delivery toEntity(DeliveryInput deliveryInput) {
+		return modelMapper.map(deliveryInput, Delivery.class);
+	}
 }

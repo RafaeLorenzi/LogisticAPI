@@ -2,6 +2,8 @@ package com.lorenzi.logistic.domain.model;
 
 import java.math.BigDecimal;
 import java.time.OffsetDateTime;
+import java.util.ArrayList;
+import java.util.List;
 import java.util.Objects;
 
 import javax.persistence.Embedded;
@@ -12,14 +14,7 @@ import javax.persistence.GeneratedValue;
 import javax.persistence.GenerationType;
 import javax.persistence.Id;
 import javax.persistence.ManyToOne;
-import javax.validation.Valid;
-import javax.validation.constraints.NotNull;
-import javax.validation.groups.ConvertGroup;
-
-import com.fasterxml.jackson.annotation.JsonProperty;
-import com.fasterxml.jackson.annotation.JsonProperty.Access;
-import com.fasterxml.jackson.databind.ser.std.StdKeySerializers.Default;
-import com.lorenzi.logistic.domain.ValidationGroups;
+import javax.persistence.OneToMany;
 
 @Entity
 public class Delivery {
@@ -28,32 +23,55 @@ public class Delivery {
 	@GeneratedValue(strategy = GenerationType.IDENTITY)
 	private Long id;
 	
-	@Valid
-	@ConvertGroup(from = Default.class, to = ValidationGroups.ClientId.class)
-	@NotNull
+	
 	@ManyToOne
 	private Client client;
 	
-	@Valid
-	@NotNull
+	
 	@Embedded
 	private Recipient recipient;
 	
-	@NotNull
+	@OneToMany(mappedBy = "delivery")
+	private List<Occurrence> occurrences = new ArrayList<>();
+	
+	
 	private BigDecimal tax;
 	
-	@JsonProperty(access = Access.READ_ONLY)
+
 	@Enumerated(EnumType.STRING)
 	private DeliveryStatus status;
 	
-	@JsonProperty(access = Access.READ_ONLY)
+
 	private OffsetDateTime deliveryDate;
 	
-	@JsonProperty(access = Access.READ_ONLY)
+
 	private OffsetDateTime completedDate;
 	
 	
 	
+	public Occurrence addOccurrence(String detail) {
+		Occurrence occurrence = new Occurrence();
+		occurrence.setDetail(detail);
+		occurrence.setRegistrationDate(OffsetDateTime.now());
+		occurrence.setDelivery(this);
+		
+	
+		this.getOccurrences().add(occurrence);
+		
+		return occurrence;
+	}
+	
+	
+	public List<Occurrence> getOccurrences() {
+		return occurrences;
+	}
+
+
+	public void setOccurrences(List<Occurrence> occurrences) {
+		this.occurrences = occurrences;
+	}
+
+
 	public Long getId() {
 		return id;
 	}
@@ -111,8 +129,6 @@ public class Delivery {
 		Delivery other = (Delivery) obj;
 		return Objects.equals(id, other.id);
 	}
-	
-	
-	
+		
 
 }

@@ -1,0 +1,5 @@
+package com.lorenzi.logistic.domain.model;
+
+public class Occurrence {
+
+}

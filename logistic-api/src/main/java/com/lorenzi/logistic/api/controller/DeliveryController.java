@@ -19,6 +19,7 @@ import org.springframework.web.bind.annotation.RestController;
 import com.lorenzi.logistic.api.assembler.DeliveryAssembler;
 import com.lorenzi.logistic.api.model.DeliveryModel;
 import com.lorenzi.logistic.api.model.RecipientModel;
+import com.lorenzi.logistic.api.model.input.DeliveryInput;
 import com.lorenzi.logistic.domain.model.Delivery;
 import com.lorenzi.logistic.domain.repository.DeliveryRepository;
 import com.lorenzi.logistic.domain.service.DeliveryRequestService;
@@ -36,8 +37,10 @@ public class DeliveryController {
 	
 	@PostMapping
 	@ResponseStatus(HttpStatus.CREATED)
-	public DeliveryModel request(@Valid @RequestBody Delivery delivery) {
-		Delivery deliveryRequest = requestService.request(delivery);
+	public DeliveryModel request(@Valid @RequestBody DeliveryInput deliveryInput) {
+		Delivery newDelivery = deliveryAssembler.toEntity(deliveryInput);
+		
+		Delivery deliveryRequest = requestService.request(newDelivery);
 		
 		return deliveryAssembler.toModel(deliveryRequest);
 	}
