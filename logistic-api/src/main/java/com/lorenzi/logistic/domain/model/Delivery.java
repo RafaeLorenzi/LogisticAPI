@@ -17,6 +17,8 @@ import javax.persistence.Id;
 import javax.persistence.ManyToOne;
 import javax.persistence.OneToMany;
 
+import com.lorenzi.logistic.domain.exception.DomainException;
+
 @Entity
 public class Delivery {
 	
@@ -61,6 +63,27 @@ public class Delivery {
 		
 		return occurrence;
 	}
+	
+	
+	public void complete() {
+		if (!canBeComplete()) {
+			throw new DomainException("The delivery cannot be completed");
+		}
+		
+		setStatus(DeliveryStatus.COMPLETED);
+		setCompletedDate(OffsetDateTime.now());
+		
+	}
+		
+
+	public boolean canBeComplete() {
+		return DeliveryStatus.PENDING.equals(getStatus());
+	}
+	
+	
+	
+	
+	
 	
 	
 	public List<Occurrence> getOccurrences() {
@@ -130,6 +153,7 @@ public class Delivery {
 		Delivery other = (Delivery) obj;
 		return Objects.equals(id, other.id);
 	}
-		
+
+
 
 }

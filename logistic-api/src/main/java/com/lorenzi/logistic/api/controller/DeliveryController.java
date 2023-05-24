@@ -4,13 +4,13 @@ import java.util.List;
 
 import javax.validation.Valid;
 
-import org.modelmapper.ModelMapper;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.PathVariable;
 import org.springframework.web.bind.annotation.PostMapping;
+import org.springframework.web.bind.annotation.PutMapping;
 import org.springframework.web.bind.annotation.RequestBody;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.ResponseStatus;
@@ -18,10 +18,10 @@ import org.springframework.web.bind.annotation.RestController;
 
 import com.lorenzi.logistic.api.assembler.DeliveryAssembler;
 import com.lorenzi.logistic.api.model.DeliveryModel;
-import com.lorenzi.logistic.api.model.RecipientModel;
 import com.lorenzi.logistic.api.model.input.DeliveryInput;
 import com.lorenzi.logistic.domain.model.Delivery;
 import com.lorenzi.logistic.domain.repository.DeliveryRepository;
+import com.lorenzi.logistic.domain.service.CompleteDeliveryService;
 import com.lorenzi.logistic.domain.service.DeliveryRequestService;
 
 @RestController
@@ -34,6 +34,8 @@ public class DeliveryController {
 	private DeliveryRepository deliveryRepository;
 	@Autowired
 	private DeliveryAssembler deliveryAssembler;
+	@Autowired
+	private CompleteDeliveryService completeDeliveryService;
 	
 	@PostMapping
 	@ResponseStatus(HttpStatus.CREATED)
@@ -56,6 +58,13 @@ public class DeliveryController {
 				.map(delivery ->  ResponseEntity.ok(deliveryAssembler.toModel(delivery)))
 				.orElse(ResponseEntity.notFound().build());
 	
+	}
+	
+	
+	@PutMapping("/{deliveryId}/complete")
+	@ResponseStatus(HttpStatus.NO_CONTENT)
+	public void completeDelivery(@PathVariable Long deliveryId) {
+		completeDeliveryService.completeDelivery(deliveryId);
 	}
 	
 }
