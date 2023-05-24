@@ -19,6 +19,7 @@ import org.springframework.web.context.request.WebRequest;
 import org.springframework.web.servlet.mvc.method.annotation.ResponseEntityExceptionHandler;
 
 import com.lorenzi.logistic.domain.exception.DomainException;
+import com.lorenzi.logistic.domain.exception.EntityNotFoundException;
 
 @ControllerAdvice
 public class ApiExceptionHandler extends ResponseEntityExceptionHandler {
@@ -47,6 +48,22 @@ public class ApiExceptionHandler extends ResponseEntityExceptionHandler {
 	}
 	
 	
+	@ExceptionHandler(EntityNotFoundException.class)
+	public ResponseEntity<Object> handleEntityNotFound(EntityNotFoundException ex, WebRequest request){
+		HttpStatus status = HttpStatus.NOT_FOUND;
+		
+		Problem problem = new Problem();
+		problem.setStatus(status.value());
+		problem.setDateTime(OffsetDateTime.now());
+		problem.setTitle(ex.getMessage());
+	
+		return handleExceptionInternal(ex, problem, new HttpHeaders(), status, request);
+		
+		
+		
+	}
+	
+	
 	@ExceptionHandler(DomainException.class)
 	public ResponseEntity<Object> handleDomain(DomainException ex, WebRequest request){
 		HttpStatus status = HttpStatus.BAD_REQUEST;
@@ -61,6 +78,8 @@ public class ApiExceptionHandler extends ResponseEntityExceptionHandler {
 		
 		
 	}
+	
+	
 	
 
 }

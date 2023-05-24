@@ -6,6 +6,7 @@ import java.util.ArrayList;
 import java.util.List;
 import java.util.Objects;
 
+import javax.persistence.CascadeType;
 import javax.persistence.Embedded;
 import javax.persistence.Entity;
 import javax.persistence.EnumType;
@@ -31,7 +32,7 @@ public class Delivery {
 	@Embedded
 	private Recipient recipient;
 	
-	@OneToMany(mappedBy = "delivery")
+	@OneToMany(mappedBy = "delivery", cascade = CascadeType.ALL)
 	private List<Occurrence> occurrences = new ArrayList<>();
 	
 	
